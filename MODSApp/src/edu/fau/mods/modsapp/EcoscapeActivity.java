@@ -18,7 +18,7 @@ public class EcoscapeActivity extends Activity {
 
 		final Intent intent = new Intent();
 
-		intent.setAction("edu.fau.group6.ecoscapes.CUSTOM_INTENT");
+		intent.setAction("mods.ecoscapes.AQUARIUM_INTENT");
 		sendBroadcast(intent);
 
 	}
