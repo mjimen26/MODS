@@ -1,5 +1,8 @@
 package edu.fau.mods.modsapp;
 
+// test comment
+import java.util.Arrays;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -52,13 +55,24 @@ public class MainMenu extends Activity {
 	        Parcelable[] rawMsgs = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES);
 	        NdefRecord record = ((NdefMessage)rawMsgs[0]).getRecords()[0];
 	        nfcData = new String(record.getPayload());
-
-	        // Display the data on the tag
-	        Toast.makeText(this, nfcData, Toast.LENGTH_LONG).show();
-	 
-	        // Do other stuff with the data...
-	        //Nested-If
+	        String[] parts = nfcData.split("/");
+	        String[] actions = Arrays.copyOfRange(parts, 3, parts.length);
 	        
+	        // uncomment for testing in order to see the string read from the tag
+	        String testString = "";
+	        for(String str : actions) {
+	        	Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
+	        	testString += str;
+	        }
+	 
+	        // parse URI from RFID tag
+	        if(actions[0].equals("ecoscapes")) {
+	        	if(actions[1].equals("aquarium")) {
+	        		intent = new Intent();
+	        		intent.setAction("mods.ecoscapes.AQUARIUM_INTENT");
+	        		sendBroadcast(intent);
+	        	}
+	        }
 		}
 	}	
 }
