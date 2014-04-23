@@ -19,9 +19,13 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-                <data android:scheme="mods"
-                    android:host="edu.fau.mods" />
             </intent-filter>
+            <intent-filter>
+				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:scheme="mods"
+					android:host="edu.fau.mods" />
+			</intent-filter>
         </activity>
         <activity
             android:name="edu.fau.mods.modsapp.Schedule"
@@ -47,7 +51,6 @@
             android:name="edu.fau.mods.modsapp.SecondFloor"
             android:label="@string/title_activity_second_floor" >
         </activity>
-        
     </application>
 
 </manifest>
