@@ -3,7 +3,7 @@
     package="edu.fau.mods.modsapp"
     android:versionCode="1"
     android:versionName="1.0" >
-
+<!-- Marvin's Comment -->
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="18" />
