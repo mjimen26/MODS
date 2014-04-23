@@ -57,6 +57,8 @@ public class MainMenu extends Activity {
 	        Toast.makeText(this, nfcData, Toast.LENGTH_LONG).show();
 	 
 	        // Do other stuff with the data...
+	        //Nested-If
+	        
 		}
 	}	
 }
