@@ -13,17 +13,13 @@ public class EcoscapeActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_ecoscape);
 	}
-	
+
 	public void launchAquarium(View v) {
 
 		final Intent intent = new Intent();
 
-		ComponentName cName = new ComponentName(
-				"edu.fau.group6.ecoscapes.aquarium",
-				"edu.fau.group6.ecoscapes.aquarium.TankActivity");
-
-		intent.setComponent(cName);
-		startActivity(intent);
+		intent.setAction("edu.fau.group6.ecoscapes.CUSTOM_INTENT");
+		sendBroadcast(intent);
 
 	}
 }
