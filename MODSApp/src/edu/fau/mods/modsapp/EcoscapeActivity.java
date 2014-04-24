@@ -1,7 +1,6 @@
 package edu.fau.mods.modsapp;
 
 import android.app.Activity;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +18,7 @@ public class EcoscapeActivity extends Activity {
 		final Intent intent = new Intent();
 
 		intent.setAction("mods.ecoscapes.AQUARIUM_INTENT");
+		intent.putExtra("screenToLaunch", "aquarium");
 		sendBroadcast(intent);
 
 	}
