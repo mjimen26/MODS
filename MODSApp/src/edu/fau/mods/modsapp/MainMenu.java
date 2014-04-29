@@ -70,10 +70,49 @@ public class MainMenu extends Activity {
 
 			// parse URI from RFID tag
 			if (actions[0].equals("ecoscapes")) {
-				intent = new Intent();
-				intent.setAction("mods.ecoscapes.AQUARIUM_INTENT");
-				intent.putExtra("screenToLaunch", actions[1]);
-				sendBroadcast(intent);
+
+				if (actions[1].equals("sharktank")) {
+					intent = new Intent();
+					intent.setAction(MODSIntents.SHARK);
+					sendBroadcast(intent);
+				}
+				if (actions[1].equals("lobstertank")) {
+					intent = new Intent();
+					intent.setAction(MODSIntents.LOBSTER);
+					sendBroadcast(intent);
+				}
+				if (actions[1].equals("livingreef")) {
+					intent = new Intent();
+					intent.setAction(MODSIntents.LIVING);
+					sendBroadcast(intent);
+				}
+				if (actions[1].equals("poisontank")) {
+					intent = new Intent();
+					intent.setAction(MODSIntents.POISON);
+					sendBroadcast(intent);
+				}
+				if (actions[1].equals("artificialreef")) {
+					intent = new Intent();
+					intent.setAction(MODSIntents.ARTIFICIAL);
+					sendBroadcast(intent);
+				}
+				if (actions[1].equals("schooltank")) {
+					intent = new Intent();
+					intent.setAction(MODSIntents.SCHOOL);
+					sendBroadcast(intent);
+				}
+				if (actions[1].equals("blindtank")) {
+					intent = new Intent();
+					intent.setAction(MODSIntents.BLIND);
+					sendBroadcast(intent);
+				}
+
+				if (actions[1].equals("horseshoe")) {
+					intent = new Intent();
+					intent.setAction(MODSIntents.HORSESHOE);
+					sendBroadcast(intent);
+				}
+				
 			}
 		}
 	}

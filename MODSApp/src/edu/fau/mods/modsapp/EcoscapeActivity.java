@@ -15,10 +15,10 @@ public class EcoscapeActivity extends Activity {
 
 	public void launchAquarium(View v) {
 
-		final Intent intent = new Intent();
+		Intent intent = new Intent();
 
-		intent.setAction("mods.ecoscapes.AQUARIUM_INTENT");
-		intent.putExtra("screenToLaunch", "aquarium");
+		intent.setAction(MODSIntents.AQUARIUM);
+		
 		sendBroadcast(intent);
 
 	}

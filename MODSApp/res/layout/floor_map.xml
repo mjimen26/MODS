@@ -16,8 +16,8 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="80dp"
         android:contentDescription="@string/floor1"
-        android:src="@drawable/ic_launcher"
-        android:onClick="launchFirstFloor" />
+        android:onClick="launchFirstFloor"
+        android:src="@drawable/ic_launcher" />
 
     <ImageButton
         android:id="@+id/floor2_btn"
@@ -27,8 +27,8 @@
         android:layout_marginLeft="50dp"
         android:layout_toRightOf="@+id/floor1_btn"
         android:contentDescription="@string/floor2"
-        android:src="@drawable/ic_launcher"
-        android:onClick="launchSecondFloor" />
+        android:onClick="launchSecondFloor"
+        android:src="@drawable/ic_launcher" />
 
     <ImageButton
         android:id="@+id/ecoscape_btn"
@@ -38,8 +38,8 @@
         android:layout_below="@+id/floor1_btn"
         android:layout_marginTop="70dp"
         android:contentDescription="@string/ecomap"
-        android:src="@drawable/ic_launcher"
-        android:onClick="launchEcoscapeLayout" />
+        android:onClick="launchEcoscapeLayout"
+        android:src="@drawable/ic_launcher" />
 
     <ImageButton
         android:id="@+id/stormctr_btn"
@@ -48,8 +48,8 @@
         android:layout_alignLeft="@+id/floor2_btn"
         android:layout_alignTop="@+id/ecoscape_btn"
         android:contentDescription="@string/stormmap"
-        android:src="@drawable/ic_launcher"
-        android:onClick="launchStormLayout" />
+        android:onClick="launchStormLayout"
+        android:src="@drawable/ic_launcher" />
 
     <TextView
         android:id="@+id/textView1"
