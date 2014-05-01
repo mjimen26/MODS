@@ -70,49 +70,69 @@ public class MainMenu extends Activity {
 
 			// parse URI from RFID tag
 			if (actions[0].equals("ecoscapes")) {
-
+				intent = new Intent();
+				
 				if (actions[1].equals("sharktank")) {
-					intent = new Intent();
 					intent.setAction(MODSIntents.SHARK);
-					sendBroadcast(intent);
 				}
 				if (actions[1].equals("lobstertank")) {
-					intent = new Intent();
 					intent.setAction(MODSIntents.LOBSTER);
-					sendBroadcast(intent);
 				}
 				if (actions[1].equals("livingreef")) {
-					intent = new Intent();
 					intent.setAction(MODSIntents.LIVING);
-					sendBroadcast(intent);
 				}
 				if (actions[1].equals("poisontank")) {
-					intent = new Intent();
 					intent.setAction(MODSIntents.POISON);
-					sendBroadcast(intent);
 				}
 				if (actions[1].equals("artificialreef")) {
-					intent = new Intent();
 					intent.setAction(MODSIntents.ARTIFICIAL);
-					sendBroadcast(intent);
 				}
 				if (actions[1].equals("schooltank")) {
-					intent = new Intent();
 					intent.setAction(MODSIntents.SCHOOL);
-					sendBroadcast(intent);
 				}
 				if (actions[1].equals("blindtank")) {
-					intent = new Intent();
 					intent.setAction(MODSIntents.BLIND);
-					sendBroadcast(intent);
 				}
 
 				if (actions[1].equals("horseshoe")) {
-					intent = new Intent();
 					intent.setAction(MODSIntents.HORSESHOE);
-					sendBroadcast(intent);
 				}
 				
+				if (actions[1].equals("african_flat_rock_scorpion")) {
+					intent.setAction(MODSIntents.AFRICAN_FLAT_ROCK_SCORPION);
+				}
+				if (actions[1].equals("asian_forest_scorpion")) {
+					intent.setAction(MODSIntents.ASIAN_FOREST_SCORPION);
+				}
+				if (actions[1].equals("emperor_scorpion")) {
+					intent.setAction(MODSIntents.EMPEROR_SCORPION);
+				}
+				if (actions[1].equals("tailless_whip_scorpion")) {
+					intent.setAction(MODSIntents.TAILLESS_WHIP_SCORPION);
+				}
+				if (actions[1].equals("red_claw_scorpion")) {
+					intent.setAction(MODSIntents.RED_CLAW_SCORPION);
+				}
+				if (actions[1].equals("madagascar_hissing_cockroach")) {
+					intent.setAction(MODSIntents.MADAGASCAR_HISSING_COCKROACH);
+				}
+				if (actions[1].equals("mexican_red_knee_tarantula")) {
+					intent.setAction(MODSIntents.MEXICAN_RED_KNEE_TARANTULA);
+				}
+				if (actions[1].equals("mexican_blond_tarantula")) {
+					intent.setAction(MODSIntents.MEXICAN_BLOND_TARANTULA);
+				}
+				if (actions[1].equals("pink_toe_tarantula")) {
+					intent.setAction(MODSIntents.PINK_TOE_TARANTULA);
+				}
+				if (actions[1].equals("rose_haired_tarantula")) {
+					intent.setAction(MODSIntents.ROSE_HAIRED_TARANTULA);
+				}
+				if (actions[1].equals("florida_ivory_millipede")) {
+					intent.setAction(MODSIntents.FLORIDA_IVORY_MILLIPEDE);
+				}
+				
+				sendBroadcast(intent);
 			}
 		}
 	}
